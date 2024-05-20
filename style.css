@@ -1,0 +1,82 @@
+/* =============Beknazar Oltiboyev============== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.slider{
+    width: 1300px;
+    overflow: hidden;
+    display: flex;
+    padding: 30px 10px;
+    position: relative;
+}
+.slider .product {
+    width: 400px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: all  .6s ease-in;
+}
+.slider .product img{
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.slider .information{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 90%;
+    margin: 0 auto;
+}
+.slider .information button{
+    width: 120px;
+    background: blue;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 7px 10px ;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.arrow{
+    position: absolute;
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 0px 10px;
+}
+
+.arrow button{
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+}
